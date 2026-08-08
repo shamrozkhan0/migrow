@@ -1,9 +1,15 @@
-import Navbar from "@/components/Navbar"
+import Hero from "@/components/home/Hero"
+import Navbar from "@/components/layout/Navbar"
 
 export default function Home(){
   return(
     <>
     <Navbar/>
+
+      <main>
+        <Hero/>
+      </main>
+
   </>
   )
 }

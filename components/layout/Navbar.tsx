@@ -27,20 +27,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-/**
- * NOTE: this component uses two extra packages on top of the Next.js
- * defaults you already have (react, next, tailwindcss, lucide-react is
- * usually already there too):
- *
- *   npm install framer-motion lucide-react
- *
- * framer-motion powers the dropdown / mobile-menu animation, lucide-react
- * powers all the icons (chevrons, phone, arrow, dropdown icons, hamburger).
- */
-
-// ----------------------------------------------------------------------------
-// Data
-// ----------------------------------------------------------------------------
 
 type DropdownItem = {
     title: string;
@@ -65,7 +51,7 @@ const NAV_ITEMS: NavItem[] = [
                 icon: Code2,
             },
             {
-                title: "Cloud & DevOps",
+                title: "Forward Deployed Engineering",
                 description: "Scalable infrastructure, CI/CD, and reliability",
                 href: "/solutions/cloud-devops",
                 icon: Cloud,
@@ -77,7 +63,7 @@ const NAV_ITEMS: NavItem[] = [
                 icon: BrainCircuit,
             },
             {
-                title: "Product Design",
+                title: "MVPs",
                 description: "UX research and UI systems that convert",
                 href: "/solutions/product-design",
                 icon: PenTool,
@@ -149,9 +135,8 @@ const NAV_ITEMS: NavItem[] = [
     { label: "Contact", href: "/contact" },
 ];
 
-// ----------------------------------------------------------------------------
-// Animation variants
-// ----------------------------------------------------------------------------
+
+
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -173,19 +158,17 @@ const panelVariants = {
     },
 };
 
+
 const itemVariants = {
     hidden: { opacity: 0, y: -6 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: EASE } },
 };
 
-// ----------------------------------------------------------------------------
-// Logo
-// ----------------------------------------------------------------------------
 
 function Logo() {
     return (
         <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Migrow — Business Technology Partner">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#E0117A] to-[#A80F5E] shadow-[0_4px_14px_-2px_rgba(196,17,110,0.55)]">
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#E0117A] to-[#A80F5E] ">
                 <Image
                     src={logo}
                     alt="Migrow"
@@ -205,9 +188,6 @@ function Logo() {
     );
 }
 
-// ----------------------------------------------------------------------------
-// Desktop nav item (with optional dropdown)
-// ----------------------------------------------------------------------------
 
 function DesktopNavItem({
     item,
@@ -292,9 +272,7 @@ function DesktopNavItem({
     );
 }
 
-// ----------------------------------------------------------------------------
-// Mobile accordion item
-// ----------------------------------------------------------------------------
+
 
 function MobileNavItem({ item }: { item: NavItem }) {
     const [open, setOpen] = useState(false);
@@ -359,9 +337,6 @@ function MobileNavItem({ item }: { item: NavItem }) {
     );
 }
 
-// ----------------------------------------------------------------------------
-// Navbar
-// ----------------------------------------------------------------------------
 
 export default function Navbar() {
     const [activeItem, setActiveItem] = useState<string | null>(null);
@@ -388,10 +363,9 @@ export default function Navbar() {
     return (
         <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-[1400px]">
-                <div className="flex items-center justify-between gap-4 rounded-[28px] border border-black/5 bg-white/90 px-4 py-3 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.12)] backdrop-blur-xl sm:px-5 lg:px-7">
+                <div className="flex items-center justify-between gap-4 rounded-[20px] border border-black/2
+                         bg-white/90 px-4 py-3 backdrop-blur-md sm:px-5 lg:px-7">
                     <Logo />
-
-                    {/* Desktop nav */}
                     <nav className="hidden items-center gap-8 lg:flex">
                         {NAV_ITEMS.map((item) => (
                             <DesktopNavItem
