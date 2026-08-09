@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Phone,
   ArrowRight,
@@ -109,7 +107,7 @@ export default function Hero() {
         className="pointer-events-none absolute right-0 top-40 h-[520px] w-[520px] rounded-full bg-pink-100/60"
       />
 
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pb-20 pt-40 lg:grid-cols-2 lg:gap-8 lg:px-12">
+      <div className="relative z-10 mx-auto grid max-w-[1400px] grid-cols-1 gap-12 px-6 pb-20 pt-40 lg:grid-cols-2 lg:gap-8 lg:px-12">
         {/* Left column */}
         <div className="flex flex-col justify-center">
           <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-pink-100">
@@ -132,10 +130,13 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <button className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-pink-600 to-pink-700 px-6 py-3.5 text-sm font-semibold text-white shadow-md shadow-pink-200 transition-transform hover:scale-[1.02]">
+            <a 
+              href="https://calendly.com/shamrozkhan/30min" 
+              target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-pink-600 to-pink-700 px-6 py-3.5 text-sm font-semibold text-white shadow-md shadow-pink-200 transition-transform hover:scale-[1.02]">
               <Phone className="h-4 w-4" />
               Book a Free Consultation
-            </button>
+            </a>
             <button className="flex items-center gap-2 rounded-lg border border-slate-200 px-6 py-3.5 text-sm font-semibold text-pink-700 transition-colors hover:bg-pink-50">
               View Our Services
               <ArrowRight className="h-4 w-4" />

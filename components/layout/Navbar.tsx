@@ -7,7 +7,6 @@ import Link from "next/link";
 
 import {
     ChevronDown,
-    Phone,
     ArrowRight,
     Menu,
     X,
@@ -136,8 +135,6 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 
-
-
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 const panelVariants = {
@@ -238,7 +235,6 @@ function DesktopNavItem({
                         exit="exit"
                         className="absolute left-1/2 top-full z-40 mt-4 w-[560px] -translate-x-1/2 origin-top"
                     >
-                        {/* invisible bridge so the mouse can travel from link to panel */}
                         <div className="h-4 w-full" />
                         <div className="grid grid-cols-2 gap-1 rounded-2xl border border-black/5 bg-white p-3 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.18)]">
                             {item.dropdown!.map((d) => {
@@ -382,7 +378,7 @@ export default function Navbar() {
                     <div className="hidden items-center gap-4 lg:flex">
                         <div className="h-8 w-px bg-neutral-200" />
                         <Link
-                            href="/contact"
+                            href="https://calendly.com/shamrozkhan/30min"
                             className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-[#E0117A] to-[#A80F5E] px-5 py-3 text-[14.5px] font-semibold text-white shadow-[0_8px_20px_-6px_rgba(196,17,110,0.6)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
                         >
                             Book a Strategy Call
@@ -439,12 +435,7 @@ export default function Navbar() {
                                 ))}
                             </nav>
                             <div className="mt-5 flex items-center gap-3">
-                                <a
-                                    href="tel:+10000000000"
-                                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-[#C4116E]"
-                                >
-                                    <Phone className="h-5 w-5" />
-                                </a>
+                             
                                 <Link
                                     href="/contact"
                                     className="flex flex-1 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#E0117A] to-[#A80F5E] px-5 py-3.5 text-[15px] font-semibold text-white shadow-[0_8px_20px_-6px_rgba(196,17,110,0.6)]"
