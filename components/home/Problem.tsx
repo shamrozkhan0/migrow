@@ -141,7 +141,7 @@ export default function Challenges() {
               <Icon className="h-6 w-6" strokeWidth={2} />
             </motion.div>
 
-            <p className="text-lg font-bold text-slate-900">{title}</p>
+            <p className="text-lg font-[600] text-slate-900">{title}</p>
             <span className="mt-1.5 mb-3 h-[2px] w-6 bg-pink-400" />
 
             <p className="text-sm leading-relaxed text-slate-600">
@@ -194,7 +194,7 @@ export default function Challenges() {
                 should.
               </p>
               <p className="mt-3 text-sm font-bold text-pink-600">
-                That&apos;s exactly why Migrow exists.
+                That&apos;s exactly why Malivate exists.
               </p>
             </div>
           </div>

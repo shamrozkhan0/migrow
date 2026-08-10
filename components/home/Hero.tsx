@@ -121,7 +121,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-            Migrow helps startups, SMEs and growing businesses in{" "}
+            Malivate helps startups, SMEs and growing businesses in{" "}
             <span className="font-semibold text-slate-800">Hyderabad</span>{" "}
             and across{" "}
             <span className="font-semibold text-slate-800">Pakistan</span>{" "}
@@ -172,7 +172,7 @@ export default function Hero() {
                   <div className="flex h-6 w-6 items-center justify-center rounded-md bg-white/20">
                     M
                   </div>
-                  Migrow
+                  Malivate
                 </div>
                 <div className="flex flex-col gap-1">
                   {sidebarItems.map(({ icon: Icon, label, active }) => (

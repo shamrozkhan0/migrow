@@ -100,7 +100,7 @@ export default function Positioning() {
           variants={fadeUp}
           className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg"
         >
-          Migrow is a business technology partner helping organizations build
+           is a business technology partner helping organizations build
           better digital experiences, streamline operations, and achieve
           sustainable growth through technology that works.
         </motion.p>

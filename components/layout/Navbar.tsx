@@ -164,18 +164,18 @@ const itemVariants = {
 
 function Logo() {
     return (
-        <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Migrow — Business Technology Partner">
+        <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Malivate — Business Technology Partner">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#E0117A] to-[#A80F5E] ">
                 <Image
                     src={logo}
-                    alt="Migrow"
+                    alt="Melivate"
                     priority
                 />
 
             </span>
             <span className="flex flex-col leading-none">
                 <span className="font-[650] text-[26px] tracking-tight text-[#17131A]">
-                    Migrow
+                    Malivate
                 </span>
                 <span className="mt-1 text-[10px] font-medium tracking-[0.16em] text-neutral-400">
                     BUSINESS TECHNOLOGY PARTNER

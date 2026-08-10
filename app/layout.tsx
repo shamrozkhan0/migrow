@@ -4,10 +4,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title:
-    "Migrow | AI & Software Development Company | Business Technology Partner",
+    "Malivate | AI & Software Development Company | Business Technology Partner",
 
   description:
-    "Migrow is a business technology partner helping startups and businesses build AI applications, AI agents, SaaS products, custom software, websites, workflow automation, and digital solutions that drive business growth.",
+    "Malivate is a business technology partner helping startups and businesses build AI applications, AI agents, SaaS products, custom software, websites, workflow automation, and digital solutions that drive business growth.",
 
   keywords: [
     "AI Development Company",
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     "Pakistan Software Company",
     "Hyderabad Pakistan Software Company",
     "AI Company Pakistan",
-    "Migrow",
+    "Malivate",
   ],
 
-  authors: [{ name: "Migrow" }],
-  creator: "Migrow",
-  publisher: "Migrow",
+  authors: [{ name: "Malivate" }],
+  creator: "Malivate",
+  publisher: "Malivate",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
