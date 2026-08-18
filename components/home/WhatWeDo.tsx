@@ -163,7 +163,7 @@ function FeatureCard({ feature }: { feature: Feature }) {
       hover:shadow-slate-900/10"
     >
       <div className="relative flex min-h-[120px] w-full items-center justify-center rounded-xl ">
-       <Image src={feature.bgImage} all={feature.imageDescription} width={250} height={0} />
+       <Image src={feature.bgImage} alt={feature.imageDescription} width={250} height={0} />
         <span className="hidden sm:flex absolute -bottom-7 flex h-14 w-14 items-center justify-center rounded-full bg-pink-600 text-white shadow-lg shadow-pink-600/30">
           <FeatureGlyph icon={feature.icon} />
         </span>
